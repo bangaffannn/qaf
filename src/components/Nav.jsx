@@ -9,7 +9,7 @@ const Nav = () => {
     <nav className="fixed bottom-2 lg:bottom-8 w-full overflow-hidden z-50">
       <div className="container mx-auto">
         {/* nav inner content */}
-        <div className="border w-full bg-black/20 h-[60px] backdrop-blur-2xl opacity-20 rounded-full max-w-[460px] mx-auto px-2 flex justify-between items-center text-2xl text-white/50">
+        <div className="border-black w-full h-[60px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-2 flex justify-between items-center text-2xl text-black transition-all duration-100 ease-in-out">
           <Link
             activeClass="active"
             smooth={true}
