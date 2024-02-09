@@ -10,7 +10,7 @@ import Contact from './components/Contact';
 
 export default function App() {
   return (
-    <div>
+    <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
       <Header />
       <Banner />
       <Nav />
@@ -18,6 +18,7 @@ export default function App() {
       <Services />
       <Work />
       <Contact />
+      <div className='h-[4000px]'></div>
     </div>
   )
 }

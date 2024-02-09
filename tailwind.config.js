@@ -1,11 +1,35 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+module.exports = {
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    fontFamily: {
+      primary: ['Montserrat', 'sans-serif'],
+      secondary: ['Rajdhani', 'sans-serif'],
+      tertiary: 'Aldrich',
+    },
+    container: {
+      padding: {
+        DEFAULT: '15px',
+      },
+    },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '960px',
+      xl: '1200px',
+    },
+    extend: {
+      colors: {
+        // DARK GRAY
+        primary: '#A9A9A9',
+        // STONE GRAY
+        accent: '#928E85',
+      },
+      backgroundImage: {
+        site: "url('./assets/site.jpg')",
+        about: "url('./assets/bg-site.png')",
+        services: "url('./assets/bg-site.png')",
+      },
+    },
   },
   plugins: [],
-}
+};
