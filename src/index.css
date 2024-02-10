@@ -2,25 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn {
-  background: linear-gradient(
-    92.23deg,
-    #ff56f6 21.43%,
-    #b936ee 50.63%,
-    #3bace2 100%,
-    #406aff 117.04%
-  );
-  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+.background {
+  shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
 }
 
-.btn:hover {
-  background: linear-gradient(
-    92.23deg,
-    #406aff 21.43%,
-    #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
-  );
+.text-gradient {
+  background-image: linear-gradient(to right, #833ab4, #FF69B4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient:hover {
+  background-image: linear-gradient(to top left, #7a0ae3, #ca1971);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+/* .btn:hover {
+  color: black,
+  ;
+} */
+
+.seticon {
+  /* Add transition properties for smooth hover effect */
+  transition: padding-bottom 0.3s ease;
+}
+
+.seticon:hover {
+  /* Apply the hover effect */
+  padding-bottom: 5px; /* Adjust as needed */
 }
 
 .gradient,
@@ -35,6 +46,13 @@
   border-radius: 100%;
 }
 
+.text-gradient {
+  background: linear-gradient(to bottom right, #8A2BE2, #FF69B4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px; /* Adjust the font size as needed */
+}
+
 @layer base {
   body {
     @apply font-secondary text-lg leading-8 text-stone-900;
@@ -46,16 +64,22 @@
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
   }
   .btn {
-    @apply rounded-full font-primary text-white font-medium;
+    @apply bg-gradient-to-br from-purple-700 to-pink-500 text-[18px];
   }
   .btn-sm {
     @apply h-[48px] px-6 text-sm;
   }
   .btn-lg {
-    @apply h-[56px] px-10 text-base;
+    @apply text-base;
   }
   .btn-link {
     @apply text-base;
+  }
+  .btn-background {
+    @apply opacity-70 text-white px-4 py-2 bg-gradient-to-br from-purple-800 to-pink-500 shadow-lg rounded-full;
+  }
+  .btn-background:hover {
+    @apply bg-gradient-to-tr from-purple-800 to-pink-500
   }
   .text-gradient {
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
@@ -63,4 +87,8 @@
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
+  .icon:hover {
+    @apply text-white
+  }
+
 }
