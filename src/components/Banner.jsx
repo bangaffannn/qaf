@@ -32,7 +32,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mt-10 mb-12 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
+              className="flex flex-col border mx-20 mt-10 mb-12 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
             >
               <span className="text-gray-600 opacity-50 mr-3">An experienced</span>
               <TypeAnimation
@@ -45,7 +45,7 @@ const Banner = () => {
                   2000,
                 ]}
                 speed={50}
-                className="text-purple-800 opacity-50"
+                className="text-purple-800 opacity-50 border border-white"
                 wrapper="span"
                 repeat={Infinity}
               />
