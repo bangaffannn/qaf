@@ -65,7 +65,7 @@ const About = () => {
   });
   return (
     <section id="about" className="section" ref={ref}>
-      <div className="container mx-auto">
+      <div className="container mx-auto mt-4">
         <div className="flex flex-col h-screen">
           {/* IMAGE */}
           <VideoBackground />
