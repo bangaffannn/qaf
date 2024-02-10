@@ -56,10 +56,8 @@
   border-radius: 100%;
 }
 
-.text-gradient {
-  background: linear-gradient(to bottom right, #8A2BE2, #FF69B4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.text-sm {
+  color: #fff;
   font-size: 18px; /* Adjust the font size as needed */
 }
 

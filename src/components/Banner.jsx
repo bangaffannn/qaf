@@ -32,9 +32,9 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
+              className="mt-10 mb-12 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
             >
-              <span className="text-gray-500 opacity-50 mr-4">An experienced</span>
+              <span className="text-gray-600 opacity-50 mr-3">An experienced</span>
               <TypeAnimation
                 sequence={[
                   "Fullstack Developer",
@@ -45,7 +45,7 @@ const Banner = () => {
                   2000,
                 ]}
                 speed={50}
-                className="text-purple-900 opacity-50"
+                className="text-purple-800 opacity-50"
                 wrapper="span"
                 repeat={Infinity}
               />
@@ -57,7 +57,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w mx-auto lg:mx-0 text-white"
             >
-              Apa kabar kamu? Apa kabar saya? Apa kabar semuanya?
+              The power to be your best. Think different!
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.5)}

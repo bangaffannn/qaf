@@ -13,7 +13,7 @@ const About = () => {
   return (
     <section id="about" className="section" ref={ref}>
       <div className="container mx-auto">
-        <div className="border flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
+        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
           {/* IMAGE */}
           <VideoBackground />
           {/* <motion.div
@@ -31,19 +31,19 @@ const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1"
           >
-            <div className="border text-[100px] font-bold lg:text-[180px] mb-[20px] sm:mb-[20px]">
-              About<span className="text-gradient text-xl"> me.</span> 
+            <div className="pt-14 text-gradient text-[100px] font-bold lg:text-[180px] mb-[15px]">
+              About<span className="text-sm"> me.</span> 
             </div>
-            <h3 className="h3 mb-4">
-              Im a Freelance Front-end Developer with over 5 years of
+            <h3 className="text-[20px] lg:text-[24px] mb-4">
+              Im a <span className="font-bold">Freelance Frontend Developer</span> with over 5 years of
               experience.
             </h3>
-            <p className="mb-6">
+            <p className="mb-6 text-[18px]">
               ALFALIApjaifhaip waifhfaihfinfoiIFAHI AOWHFOIHAIFOA
             </p>
             {/* STATS */}
-            <div className="border flex gap-x-6 lg:gap-x-10 mb-10">
-              <div className="border">
+            <div className="flex gap-x-6 lg:gap-x-10 mb-10">
+              <div>
                 <div className="pt-4 text-gradient mb-2">
                   {inView ? <CountUp className="text-[80px]" start={0} end={13} duration={5} /> : null}
                 </div>
@@ -74,7 +74,7 @@ const About = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="border flex justify-start gap-x-6 mb-12 mx-auto lg:mx-0"
+              className="flex justify-start gap-x-6 mb-12 mx-auto lg:mx-0"
             >
               <a
                 href="https://wa.me/6289608725725"
