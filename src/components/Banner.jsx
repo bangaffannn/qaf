@@ -37,11 +37,11 @@ const Banner = () => {
               <span className="text-gray-500 opacity-50 mr-4">An experienced</span>
               <TypeAnimation
                 sequence={[
-                  "Developer",
+                  "Fullstack Developer",
                   2000,
-                  "Tech addicted",
+                  "Automation Tester",
                   2000,
-                  "Youtuber",
+                  "Data Analyst and Data Visual",
                   2000,
                 ]}
                 speed={50}
@@ -66,8 +66,8 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex justify-center gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="text-purple-500 seticon">Contact me</button>
-              <a href="#" className="text-purple-500 seticon">
+              <a href="https://wa.me/6289608725725" className="text-purple-500 seticon">Contact me</a>
+              <a href="https://wa.me/6289608725725" className="text-purple-500 seticon">
                 My Portfolio
               </a>
             </motion.div>
