@@ -26,7 +26,7 @@ module.exports = {
       },
       backgroundImage: {
         site: "url('./assets/wave-black.jpg')",
-        about: "url('./assets/bg-site.png')",
+        about: "url('./assets/earth.mp4')",
         services: "url('./assets/bg-site.png')",
       },
     },

@@ -34,6 +34,16 @@
   padding-bottom: 5px; /* Adjust as needed */
 }
 
+.sideicon {
+  /* Add transition properties for smooth hover effect */
+  transition: padding-top 0.2s ease;
+}
+
+.sideicon:hover {
+  /* Apply the hover effect */
+  padding-top: 5px; /* Adjust as needed */
+}
+
 .gradient,
 .active {
   background: black;
@@ -61,7 +71,7 @@
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
   }
   .h3 {
-    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+    @apply font-primary text-[24px] mb-6;
   }
   .btn {
     @apply bg-gradient-to-br from-purple-700 to-pink-500 text-[18px];
@@ -87,6 +97,7 @@
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
+  
   .icon:hover {
     @apply text-white
   }
