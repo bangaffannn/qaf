@@ -16,6 +16,7 @@ const skillset = [
       "HTML",
       "CSS",
       "Tailwind CSS",
+      "Bootstrap",
       "Material-UI",
       "Daisy-UI",
       "Framer-Motion",
@@ -26,6 +27,7 @@ const skillset = [
       "MongoDB",
       "NodeJS",
       "Express",
+      "Axios",,
       "NestJS",
       "GraphQL",
       "Firebase",
@@ -83,7 +85,7 @@ const About = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.3 }}
-                className="cursor-pointer mt-20 flex flex-col justify-start items-start font-bold text-[180px] sideicon"
+                className="cursor-pointer mt-20 flex flex-col justify-start items-start font-bold text-[180px] seticon lg:sideicon"
               >
                 Tech <span className="mt-5 text-purple-900">set.</span>
               </motion.h1>

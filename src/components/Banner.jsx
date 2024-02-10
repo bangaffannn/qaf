@@ -23,7 +23,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex justify-center items-center text-[100px] font-bold leading-[0] lg:text-[180px] text-white"
+              className="flex justify-center items-center text-[100px] md:text-[180px] font-bold leading-[0] text-white"
             >
               M<span className="font-bold text-purple-800">AGM.</span>
             </motion.h1>
@@ -32,7 +32,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex flex-col px-6 mt-5 mb-12 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
+              className="flex flex-col px-6 mt-5 md:mt-10 mb-12 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
             >
               <span className="text-gray-600 opacity-50 mr-3 text-[33px] lg:text-[80px]">
                 An experienced
