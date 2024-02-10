@@ -32,7 +32,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex flex-col border mx-20 mt-10 mb-12 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
+              className="flex flex-col border px-6 mt-5 mb-12 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
             >
               <span className="text-gray-600 opacity-50 mr-3 text-[33px] lg:text-[80px]">An experienced</span>
               <TypeAnimation
