@@ -1,6 +1,6 @@
 import React from "react";
 // import Image from "../assets/avatar.svg";
-import Image from '../assets/site.jpg'
+import Image from "../assets/site.jpg";
 
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
@@ -34,7 +34,9 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex flex-col px-6 mt-5 mb-12 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
             >
-              <span className="text-gray-600 opacity-50 mr-3 text-[33px] lg:text-[80px]">An experienced</span>
+              <span className="text-gray-600 opacity-50 mr-3 text-[33px] lg:text-[80px]">
+                An experienced
+              </span>
               <TypeAnimation
                 sequence={[
                   "Fullstack Developer",
@@ -57,7 +59,10 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w mx-auto lg:mx-0 text-white"
             >
-              The power to be your best. Think different!
+              Problem <span className="font-bold">solving</span> | Creativity |
+              Attention <span className="font-bold">to detail</span> |{" "}
+              <span className="font-bold">Continous</span> learning | Teamwork |
+              Think <span className="font-bold">different</span>
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.5)}
@@ -66,8 +71,16 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex justify-center gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <a href="https://wa.me/6289608725725" className="text-purple-500 seticon">Contact me</a>
-              <a href="https://wa.me/6289608725725" className="text-purple-500 seticon">
+              <a
+                href="https://wa.me/6289608725725"
+                className="text-purple-500 seticon"
+              >
+                Contact me
+              </a>
+              <a
+                href="https://wa.me/6289608725725"
+                className="text-purple-500 seticon"
+              >
                 My Portfolio
               </a>
             </motion.div>
@@ -85,7 +98,7 @@ const Banner = () => {
                 <FaInstagram />
               </a>
               <a href="#" className="seticon">
-                <FaLinkedin  />
+                <FaLinkedin />
               </a>
             </motion.div>
           </div>
