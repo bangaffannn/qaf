@@ -10,7 +10,7 @@ import Contact from './components/Contact';
 
 export default function App() {
   return (
-    <div className='bg-gray-900 bg-no-repeat bg-cover overflow-hidden'>
+    <div className='bg-black bg-no-repeat bg-cover overflow-hidden'>
       {/* <Header /> */}
       <Banner />
       <Nav />

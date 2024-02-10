@@ -26,7 +26,7 @@
 
 .seticon {
   /* Add transition properties for smooth hover effect */
-  transition: padding-bottom 0.3s ease;
+  transition: padding-bottom 0.2s ease;
 }
 
 .seticon:hover {
@@ -55,7 +55,7 @@
 
 @layer base {
   body {
-    @apply font-secondary text-lg leading-8 text-stone-900;
+    @apply font-secondary text-lg leading-8 text-white;
   }
   .h2 {
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
