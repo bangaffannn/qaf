@@ -34,7 +34,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex flex-col border mx-20 mt-10 mb-12 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
             >
-              <span className="text-gray-600 opacity-50 mr-3">An experienced</span>
+              <span className="text-gray-600 opacity-50 mr-3 text-[33px] lg:text-[80px]">An experienced</span>
               <TypeAnimation
                 sequence={[
                   "Fullstack Developer",
