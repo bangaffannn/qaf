@@ -31,7 +31,8 @@
 
 .seticon:hover {
   /* Apply the hover effect */
-  padding-bottom: 5px; /* Adjust as needed */
+  padding-bottom: 8px;
+  color: #7a0ae3; /* Adjust as needed */
 }
 
 .sideicon {

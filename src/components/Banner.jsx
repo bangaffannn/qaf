@@ -3,6 +3,8 @@ import React from "react";
 import Image from "../assets/site.jpg";
 
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
+
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
@@ -14,7 +16,7 @@ const Banner = () => {
       id="banner"
       className="min-h-[105vh] lg:min-h-[110vh] flex justify-center items-center"
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto mt-10">
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
           {/* TEXT */}
           <div className="flex-1 text-center font-secondary lg:text-center">
@@ -64,12 +66,12 @@ const Banner = () => {
               <span className="font-bold">Continous</span> learning | Teamwork |
               Think <span className="font-bold">different</span>
             </motion.p>
-            <motion.div
+            {/* <motion.div
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex justify-center gap-x-6 items-center mb-12 mx-auto lg:mx-0"
+              className="border flex justify-center gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
               <a
                 href="https://wa.me/6289608725725"
@@ -83,6 +85,41 @@ const Banner = () => {
               >
                 My Portfolio
               </a>
+            </motion.div> */}
+            <motion.div
+              variants={fadeIn("up", 0.5)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="flex flex-col lg:flex-row lg:mx-[120px] lg:gap-x-[120px] rounded-xl justify-center items-center mb-[100px] mx-auto lg:mx-0"
+            >
+              <div className="w-full p-7 flex justify-center items-center gap-x-2">
+                <a
+                  href="https://wa.me/6289608725725"
+                  className="text-purple-500 hover:mr-2 transition-all duration-500"
+                >
+                  Share with me
+                </a>
+                <IoIosArrowDroprightCircle size={25} className="cursor-pointer hover:ml-2 transition-all duration-500" />
+              </div>
+              <div className="w-full p-7 flex justify-center items-center gap-x-2">
+                <a
+                  href="https://wa.me/6289608725725"
+                  className="text-purple-500 hover:mr-2 transition-all duration-500"
+                >
+                  Learn about me
+                </a>
+                <IoIosArrowDroprightCircle size={25} className="cursor-pointer hover:ml-2 transition-all duration-500" />
+              </div>
+              <div className="w-full flex justify-center items-center p-7 gap-x-2">
+                <a
+                  href="https://wa.me/6289608725725"
+                  className="text-white hover:mr-2 transition-all duration-500"
+                >
+                  Work with me
+                </a>
+                <IoIosArrowDroprightCircle size={25} className="text-purple-600 cursor-pointer hover:ml-2 transition-all duration-500" />
+              </div>
             </motion.div>
             <motion.div
               variants={fadeIn("up", 0.5)}
