@@ -118,7 +118,7 @@ const About = () => {
               <h1 className="cursor-pointer font-bold seticon">
                 About me
               </h1>
-              <p className="border max-w-5xl sm:max-w-6xl">
+              <p className="max-w-5xl sm:max-w-6xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris

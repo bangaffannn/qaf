@@ -4,6 +4,7 @@ import Image from "../assets/site.jpg";
 
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { TbBrandVercel } from "react-icons/tb";
 
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -41,11 +42,11 @@ const Banner = () => {
               </span>
               <TypeAnimation
                 sequence={[
-                  "Fullstack Developer",
+                  "Developer",
                   2000,
-                  "Automation Tester",
+                  "Tester",
                   2000,
-                  "Data Analyst and Data Visual",
+                  "Data Analyst",
                   2000,
                 ]}
                 speed={50}
@@ -100,7 +101,10 @@ const Banner = () => {
                 >
                   Share with me
                 </a>
-                <IoIosArrowDroprightCircle size={25} className="cursor-pointer hover:ml-2 transition-all duration-500" />
+                <IoIosArrowDroprightCircle
+                  size={25}
+                  className="cursor-pointer hover:ml-2 transition-all duration-500"
+                />
               </div>
               <div className="w-full p-7 flex justify-center items-center gap-x-2">
                 <a
@@ -109,7 +113,10 @@ const Banner = () => {
                 >
                   Learn about me
                 </a>
-                <IoIosArrowDroprightCircle size={25} className="cursor-pointer hover:ml-2 transition-all duration-500" />
+                <IoIosArrowDroprightCircle
+                  size={25}
+                  className="cursor-pointer hover:ml-2 transition-all duration-500"
+                />
               </div>
               <div className="w-full flex justify-center items-center p-7 gap-x-2">
                 <a
@@ -118,7 +125,10 @@ const Banner = () => {
                 >
                   Work with me
                 </a>
-                <IoIosArrowDroprightCircle size={25} className="text-purple-600 cursor-pointer hover:ml-2 transition-all duration-500" />
+                <IoIosArrowDroprightCircle
+                  size={25}
+                  className="text-purple-600 cursor-pointer hover:ml-2 transition-all duration-500"
+                />
               </div>
             </motion.div>
             <motion.div
@@ -136,6 +146,9 @@ const Banner = () => {
               </a>
               <a href="#" className="seticon">
                 <FaLinkedin />
+              </a>
+              <a href="#" className="seticon">
+                <TbBrandVercel />
               </a>
             </motion.div>
           </div>
