@@ -50,7 +50,7 @@ const Nav = () => {
           >
             <BsBriefcase />
           </Link>
-          <Link
+          {/* <Link
             activeClass="active"
             smooth={true}
             spy={true}
@@ -58,7 +58,7 @@ const Nav = () => {
             className={linkClasses}
           >
             <BsChatSquare />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>

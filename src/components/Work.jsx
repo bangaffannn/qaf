@@ -24,10 +24,10 @@ const Work = () => {
   return (
     <div id="work" className="section">
       <div className="container mx-auto px-4">
-        <h1 className="text-3xl seticon font-bold mb-8">Quotes</h1>
+        <h1 className="flex justify-center items-center cursor-pointer text-3xl hover:scale-90 transition-transform ease-in font-bold mb-8">A Few Quotes That Inspire Me</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {quotes.map((quote, index) => (
-            <div key={index} className="bg-black border border-black rounded-lg p-6 shadow-md hover:border-purple-900 hover:scale-150 transition-transform ease-in">
+            <div key={index} className="bg-black border border-black rounded-lg mx-[60px] sm:mx-[20px] md:mx-0 p-6 shadow-md hover:border-purple-900 hover:scale-125 transition-transform ease-in cursor-pointer">
               <p className="text-xl text-white font-medium mb-4">{quote.text}</p>
               <p className="text-purple-900 font-bold text-right">{quote.author}</p>
             </div>

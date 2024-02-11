@@ -6,7 +6,7 @@ import Banner from './components/Banner';
 import About from './components/About';
 import Services from './components/Services';
 import Work from './components/Work';
-import Contact from './components/Contact';
+// import Contact from './components/Contact';
 
 export default function App() {
   return (
@@ -17,8 +17,7 @@ export default function App() {
       <About />
       <Services />
       <Work />
-      <Contact />
-      <div className='h-[4000px]'></div>
+      {/* <div className='h-[4000px]'></div> */}
     </div>
   )
 }
