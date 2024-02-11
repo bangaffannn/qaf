@@ -27,7 +27,8 @@ const skillset = [
       "MongoDB",
       "NodeJS",
       "Express",
-      "Axios",,
+      "Axios",
+      ,
       "NestJS",
       "GraphQL",
       "Firebase",
@@ -115,17 +116,17 @@ const About = () => {
               </motion.div>
             </div>
             <div className="mt-5 flex flex-col justify-center items-center text-justify">
-              <h1 className="cursor-pointer font-bold seticon">
-                About me
-              </h1>
+              <h1 className="cursor-pointer font-bold seticon">About me</h1>
               <p className="max-w-5xl sm:max-w-6xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Studying in the Geophysics and Meteorology department at IPB
+                University made me interact a lot with the analysis of thousands
+                of data (soil, water, climate and weather) using Python, R and
+                ArcGIS. This increases my curiosity towards the world of
+                programming because we can channel complexity, creativity and
+                problem solving in it. Currently I work in two institutions as a
+                Digital Strategist Manager, which also includes website
+                maintenance and development. I also work on private projects in
+                mobile and website development.
               </p>
             </div>
           </div>
