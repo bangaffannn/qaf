@@ -4,7 +4,6 @@ import Image from "../assets/site.jpg";
 
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { TbBrandVercel } from "react-icons/tb";
 
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -146,9 +145,6 @@ const Banner = () => {
               </a>
               <a href="#" className="seticon">
                 <FaLinkedin />
-              </a>
-              <a href="#" className="seticon">
-                <TbBrandVercel />
               </a>
             </motion.div>
           </div>
