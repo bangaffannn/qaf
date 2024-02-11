@@ -2,9 +2,20 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
+import { FaReact } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { TbBrandFramerMotion } from "react-icons/tb";
+import { IoLogoJavascript } from "react-icons/io5";
+
+import { FaPython } from "react-icons/fa";
+import { SiJupyter } from "react-icons/si";
+import { IoLogoTableau } from "react-icons/io5";
+
 import Img1 from "../assets/portfolio-img1.png";
-import Img2 from "../assets/portfolio-img2.png";
-import Img3 from "../assets/portfolio-img3.png";
+import Img2 from "../assets/NewsSentimentAnalysis.png";
+import Img3 from "../assets/SalesAnalysis.png";
+import Img4 from "../assets/GoogleAccountClone.png";
+import Img5 from "../assets/MobileApps.jpg";
 
 const project = [
   {
@@ -55,11 +66,19 @@ export default function Services() {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
+                <span className="text-gradient">Frontend development</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+                <span className="text-xl text-white">Portfolio Project</span>
+              </div>
+              <div className="absolute -bottom-full left-12 group-hover:bottom-8 transition-all duration-700 z-50">
+                <span className="flex text-sm gap-x-2 text-white">
+                  <IoLogoJavascript />
+                  <FaReact />
+                  <SiTailwindcss />
+                  <TbBrandFramerMotion />
+                </span>
               </div>
             </div>
             {/* IMAGE B */}
@@ -69,16 +88,23 @@ export default function Services() {
               {/* img */}
               <img
                 className="group-hover:scale-125 transition-all duration-500"
-                src={Img1}
+                src={Img2}
                 alt=""
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
+                <span className="text-gradient">Data Analysis and Visual</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+                <span className="text-xl text-white">News Article Sentiment Analysis</span>
+              </div>
+              <div className="absolute -bottom-full left-12 group-hover:bottom-8 transition-all duration-700 z-50">
+                <span className="flex text-sm gap-x-2 text-white">
+                  <FaPython />
+                  <SiJupyter />
+                  <IoLogoTableau />
+                </span>
               </div>
             </div>
             {/* IMAGE C */}
@@ -88,16 +114,23 @@ export default function Services() {
               {/* img */}
               <img
                 className="group-hover:scale-125 transition-all duration-500"
-                src={Img1}
+                src={Img3}
                 alt=""
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
+                <span className="text-gradient">Data Analysis and Visual</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+                <span className="text-xl text-white">Data Sales Analysis</span>
+              </div>
+              <div className="absolute -bottom-full left-12 group-hover:bottom-8 transition-all duration-700 z-50">
+                <span className="flex text-sm gap-x-2 text-white">
+                  <FaPython />
+                  <SiJupyter />
+                  <IoLogoTableau />
+                </span>
               </div>
             </div>
           </div>
@@ -110,7 +143,7 @@ export default function Services() {
               {/* img */}
               <img
                 className="group-hover:scale-125 transition-all duration-500"
-                src={Img1}
+                src={Img4}
                 alt=""
               />
               {/* pretitle */}
@@ -119,7 +152,15 @@ export default function Services() {
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+                <span className="text-xl text-white">Google Account Project</span>
+              </div>
+              <div className="absolute -bottom-full left-12 group-hover:bottom-8 transition-all duration-700 z-50">
+                <span className="flex text-sm gap-x-2 text-white">
+                  <IoLogoJavascript />
+                  <FaReact />
+                  <SiTailwindcss />
+                  <TbBrandFramerMotion />
+                </span>
               </div>
             </div>
             {/* IMAGE B */}
@@ -129,16 +170,24 @@ export default function Services() {
               {/* img */}
               <img
                 className="group-hover:scale-125 transition-all duration-500"
-                src={Img1}
+                src={Img5}
                 alt=""
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
+                <span className="text-gradient">Mobile development</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+                <span className="text-xl text-white">Mobile Apps Launching</span>
+              </div>
+              <div className="absolute -bottom-full left-12 group-hover:bottom-8 transition-all duration-700 z-50">
+                <span className="flex text-sm gap-x-2 text-white">
+                  <IoLogoJavascript />
+                  <FaReact />
+                  <SiTailwindcss />
+                  <TbBrandFramerMotion />
+                </span>
               </div>
             </div>
             {/* IMAGE C */}
@@ -153,11 +202,19 @@ export default function Services() {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
+                <span className="text-gradient">Frontend development</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+                <span className="text-xl text-white">Portfolio Project</span>
+              </div>
+              <div className="absolute -bottom-full left-12 group-hover:bottom-8 transition-all duration-700 z-50">
+                <span className="flex text-sm gap-x-2 text-white">
+                  <IoLogoJavascript />
+                  <FaReact />
+                  <SiTailwindcss />
+                  <TbBrandFramerMotion />
+                </span>
               </div>
             </div>
           </div>

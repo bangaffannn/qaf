@@ -25,10 +25,10 @@ const skillset = [
   {
     "Backend Development": [
       "MongoDB",
+      "PostgreSQL",
       "NodeJS",
       "Express",
       "Axios",
-      ,
       "NestJS",
       "GraphQL",
       "Firebase",
@@ -120,10 +120,12 @@ const About = () => {
               <p className="max-w-5xl sm:max-w-6xl">
                 Studying in the Geophysics and Meteorology department at IPB
                 University made me interact a lot with the analysis of thousands
-                of data (soil, water, climate and weather) using Python, R and
-                ArcGIS. This increases my curiosity towards the world of
-                programming because we can channel complexity, creativity and
-                problem solving in it. Currently I work in two institutions as a
+                of data (soil, water, climate and weather) using Programming
+                Language Python, R and ArcGIS. This increases my curiosity
+                towards the world of programming because we can channel
+                complexity, creativity and problem solving in it. And also, this
+                passion made me explore programming languages for website and
+                mobile development. Currently I work in two institutions as a
                 Digital Strategist Manager, which also includes website
                 maintenance and development. I also work on private projects in
                 mobile and website development.
