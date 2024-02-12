@@ -6,6 +6,8 @@ import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
+import { BiLogoTypescript } from "react-icons/bi";
+import { SiPlaywright } from "react-icons/si";
 
 import { FaPython } from "react-icons/fa";
 import { SiJupyter } from "react-icons/si";
@@ -16,6 +18,7 @@ import Img2 from "../assets/NewsSentimentAnalysis.png";
 import Img3 from "../assets/SalesAnalysis.png";
 import Img4 from "../assets/GoogleAccountClone.png";
 import Img5 from "../assets/MobileApps.jpg";
+import Img6 from "../assets/playwright-test.png";
 
 const project = [
   {
@@ -197,7 +200,7 @@ export default function Services() {
               {/* img */}
               <img
                 className="group-hover:scale-125 transition-all duration-500"
-                src={Img1}
+                src={Img6}
                 alt=""
               />
               {/* pretitle */}
@@ -206,14 +209,12 @@ export default function Services() {
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-xl text-white">Portfolio Project</span>
+                <span className="text-xl text-white">Playwright Automation Testing</span>
               </div>
               <div className="absolute -bottom-full left-12 group-hover:bottom-8 transition-all duration-700 z-50">
                 <span className="flex text-sm gap-x-2 text-white">
-                  <IoLogoJavascript />
-                  <FaReact />
-                  <SiTailwindcss />
-                  <TbBrandFramerMotion />
+                  <BiLogoTypescript />
+                  <SiPlaywright />
                 </span>
               </div>
             </div>
