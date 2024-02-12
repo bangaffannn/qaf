@@ -8,12 +8,16 @@ import { TbBrandFramerMotion } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoTypescript } from "react-icons/bi";
 import { SiPlaywright } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { DiMongodb } from "react-icons/di";
+import { SiAxios } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
 
 import { FaPython } from "react-icons/fa";
 import { SiJupyter } from "react-icons/si";
 import { IoLogoTableau } from "react-icons/io5";
 
-import Img1 from "../assets/portfolio-img1.png";
+import Img1 from "../assets/backend.png";
 import Img2 from "../assets/NewsSentimentAnalysis.png";
 import Img3 from "../assets/SalesAnalysis.png";
 import Img4 from "../assets/GoogleAccountClone.png";
@@ -58,7 +62,7 @@ export default function Services() {
           {/* TOP IMAGE */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-x-5 gap-y-5 md:mt-0 mb-5">
             {/* IMAGE A */}
-            <div className="group relative overflow-hidden rounded-xl w-96 h-auto">
+            <div className="group relative overflow-hidden rounded-xl w-96 h-44">
               {/* overlay */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* img */}
@@ -69,23 +73,25 @@ export default function Services() {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">Frontend development</span>
+                <span className="text-gradient">Backend development</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-xl text-white">Portfolio Project</span>
+                <span className="text-xl text-white">User Controller</span>
               </div>
               <div className="absolute -bottom-full left-12 group-hover:bottom-8 transition-all duration-700 z-50">
                 <span className="flex text-sm gap-x-2 text-white">
                   <IoLogoJavascript />
                   <FaReact />
-                  <SiTailwindcss />
-                  <TbBrandFramerMotion />
+                  <FaNodeJs />
+                  <DiMongodb />
+                  <SiAxios />
+                  <SiExpress />
                 </span>
               </div>
             </div>
             {/* IMAGE B */}
-            <div className="group relative overflow-hidden rounded-xl w-96 h-auto">
+            <div className="group relative overflow-hidden rounded-xl w-96 h-44">
               {/* overlay */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* img */}
@@ -111,7 +117,7 @@ export default function Services() {
               </div>
             </div>
             {/* IMAGE C */}
-            <div className="group relative overflow-hidden rounded-xl w-96 h-auto">
+            <div className="group relative overflow-hidden rounded-xl w-96 h-44">
               {/* overlay */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* img */}
@@ -140,7 +146,7 @@ export default function Services() {
           {/* BELOW IMAGE */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-x-5 gap-y-5 md:mt-0">
             {/* IMAGE A */}
-            <div className="group relative overflow-hidden rounded-xl w-96 h-auto">
+            <div className="group relative overflow-hidden rounded-xl w-96 h-44">
               {/* overlay */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* img */}
@@ -167,7 +173,7 @@ export default function Services() {
               </div>
             </div>
             {/* IMAGE B */}
-            <div className="group relative overflow-hidden rounded-xl w-96 h-auto">
+            <div className="group relative overflow-hidden rounded-xl w-96 h-44">
               {/* overlay */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* img */}
@@ -194,7 +200,7 @@ export default function Services() {
               </div>
             </div>
             {/* IMAGE C */}
-            <div className="group relative overflow-hidden rounded-xl w-96 h-auto">
+            <div className="group relative overflow-hidden rounded-xl w-96 h-44">
               {/* overlay */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* img */}
