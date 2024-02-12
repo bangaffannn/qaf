@@ -54,7 +54,7 @@ const project = [
 export default function Services() {
   return (
     <div id="services" className="section">
-      <div className="container mx-auto mt-[720px] sm:mt-[320px] lg:mt-0">
+      <div className="container mx-auto mt-[700px] sm:mt-[320px] lg:mt-0">
         <h1 className="flex justify-center items-center cursor-pointer mb-5 text-3xl sm:mb-10 md:-mb-1 lg:mb-1 sm:text-[60px] md:text-[80px] lg:text-[120px] xl:text-[140px] font-bold gap-y-5 hover:scale-125 transition-transform ease-in">
           Portfolio <span className="text-purple-900">Project</span>
         </h1>
