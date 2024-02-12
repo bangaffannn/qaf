@@ -86,7 +86,7 @@ const About = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.3 }}
-                className="cursor-pointer mt-20 flex flex-col justify-start items-start font-bold text-[180px] seticon lg:sideicon"
+                className="cursor-pointer mt-20 flex flex-col justify-start items-start font-bold text-[150px] md:text-[180px] sideicon"
               >
                 Tech <span className="mt-5 text-purple-900">set.</span>
               </motion.h1>
