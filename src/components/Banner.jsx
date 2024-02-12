@@ -16,7 +16,7 @@ const Banner = () => {
       id="banner"
       className="min-h-[105vh] lg:min-h-[110vh] flex justify-center items-center"
     >
-      <div className="container mx-auto mt-[120px]">
+      <div className="container mx-auto mt-[160px] sm:mt-[120px]">
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
           {/* TEXT */}
           <div className="flex-1 text-center font-secondary lg:text-center">
