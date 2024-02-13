@@ -21,7 +21,7 @@ const Banner = () => {
       <div className="container mx-auto mt-[160px] sm:mt-[30px] flex flex-col w-full justify-center items-center">
         <div className="mb-[120px]">
           <img
-            className="flex justify-center items-center w-full text-center w-[300px] h-auto"
+            className="flex justify-center items-center w-full text-center w-[250px] h-auto"
             src={Logo}
             alt=""
           />
@@ -34,7 +34,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex justify-center items-center text-[80px] md:text-[160px] font-bold leading-[0] text-white hover:text-[90px] md:hover:text-[180px] transition-all duration-100"
+              className="flex justify-center items-center text-[80px] md:text-[160px] font-bold leading-[0] text-white hover:text-[90px] md:hover:text-[180px] transition-all duration-200"
             >
               WELCOME
             </motion.h1>
