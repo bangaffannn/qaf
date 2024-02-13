@@ -1,9 +1,11 @@
 import React from "react";
 // import Image from "../assets/avatar.svg";
 import Image from "../assets/site.jpg";
+import Logo from "../assets/logo/logoqaf.png";
 
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { FaYoutube } from "react-icons/fa";
 
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -16,7 +18,14 @@ const Banner = () => {
       id="banner"
       className="min-h-[105vh] lg:min-h-[110vh] flex justify-center items-center"
     >
-      <div className="container mx-auto mt-[160px] sm:mt-[120px]">
+      <div className="container mx-auto mt-[160px] sm:mt-[30px] flex flex-col w-full justify-center items-center">
+        <div className="mb-[120px]">
+          <img
+            className="flex justify-center items-center w-full text-center w-[300px] h-auto"
+            src={Logo}
+            alt=""
+          />
+        </div>
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
           {/* TEXT */}
           <div className="flex-1 text-center font-secondary lg:text-center">
@@ -25,9 +34,9 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex justify-center items-center text-[100px] md:text-[180px] font-bold leading-[0] text-white"
+              className="flex justify-center items-center text-[80px] md:text-[160px] font-bold leading-[0] text-white hover:text-[90px] md:hover:text-[180px] transition-all duration-100"
             >
-              M<span className="font-bold text-purple-800">AGM.</span>
+              WELCOME
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.3)}
@@ -36,35 +45,39 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex flex-col px-6 mt-5 md:mt-10 mb-12 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
             >
-              <span className="text-gray-600 opacity-50 mr-3 text-[26px] sm:text-[48px] lg:text-[80px]">
-                An experienced
+              <span className="text-purple-600 opacity-50 mr-3 text-[26px] sm:text-[48px] lg:text-[80px]">
+                To Qaf Institute
               </span>
-              <TypeAnimation
-                sequence={[
-                  "Developer",
-                  2000,
-                  "Tester",
-                  2000,
-                  "Data Analyst",
-                  2000,
-                ]}
+              {/* <TypeAnimation
+                sequence={["Profile", 2000, "Page", 2000, "Event", 2000]}
                 speed={50}
-                className="text-purple-800 opacity-50"
+                className="text-white opacity-50"
                 wrapper="span"
                 repeat={Infinity}
-              />
+              /> */}
             </motion.div>
             <motion.p
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 max-w mx-auto lg:mx-0 text-white"
+              className="mb-8 max-w mx-auto lg:mx-0 text-white text-sm md:text-2xl"
             >
-              Problem <span className="font-bold">solving</span> | Creativity |
-              Attention <span className="font-bold">to detail</span> |{" "}
-              <span className="font-bold">Continous</span> learning | Teamwork |
-              Think <span className="font-bold">different</span>
+              <span>Belajar tahsin online bareng Qaf</span>{" "}
+              <TypeAnimation
+                sequence={[
+                  "dimana saja!",
+                  2000,
+                  "kapan saja!",
+                  2000,
+                  "mudah dan gratis!",
+                  2000,
+                ]}
+                speed={50}
+                className="text-white font-bold text-sm md:text-2xl"
+                wrapper="span"
+                repeat={Infinity}
+              />
             </motion.p>
             {/* <motion.div
               variants={fadeIn("up", 0.5)}
@@ -91,26 +104,14 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex flex-col lg:flex-row lg:mx-[120px] lg:gap-x-[120px] rounded-xl justify-center items-center mb-[100px] mx-auto lg:mx-0"
+              className="flex flex-col lg:flex-row lg:mx-[160px] lg:gap-x-0 rounded-xl justify-center items-center mb-[50px]"
             >
               <div className="w-full p-7 flex justify-center items-center gap-x-2">
                 <a
                   href="https://wa.me/6289608725725"
                   className="text-purple-500 hover:mr-2 transition-all duration-500"
                 >
-                  Share with me
-                </a>
-                <IoIosArrowDroprightCircle
-                  size={25}
-                  className="cursor-pointer hover:ml-2 transition-all duration-500"
-                />
-              </div>
-              <div className="w-full p-7 flex justify-center items-center gap-x-2">
-                <a
-                  href="https://wa.me/6289608725725"
-                  className="text-purple-500 hover:mr-2 transition-all duration-500"
-                >
-                  Learn about me
+                  Share with us
                 </a>
                 <IoIosArrowDroprightCircle
                   size={25}
@@ -138,7 +139,7 @@ const Banner = () => {
               className="flex justify-center items-center text-[20px] text-white gap-x-6 mx-auto lg:mx-0"
             >
               <a href="#" className="seticon">
-                <FaGithub />
+                <FaYoutube />
               </a>
               <a href="#" className="seticon">
                 <FaInstagram />

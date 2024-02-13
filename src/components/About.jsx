@@ -6,67 +6,27 @@ import { useInView } from "react-intersection-observer";
 import { fadeIn } from "../variants";
 import { motion } from "framer-motion";
 
-const skillset = [
-  {
-    "Frontend Development": [
-      "React",
-      "NextJS",
-      "JavaScript",
-      "TypeScript",
-      "HTML",
-      "CSS",
-      "Tailwind CSS",
-      "Bootstrap",
-      "Material-UI",
-      "Daisy-UI",
-      "Framer-Motion",
-    ],
-  },
-  {
-    "Backend Development": [
-      "MongoDB",
-      "PostgreSQL",
-      "NodeJS",
-      "Express",
-      "Axios",
-      "NestJS",
-      "GraphQL",
-      "Firebase",
-    ],
-  },
-  {
-    "Version Control": ["Git", "GitHub"],
-  },
-  {
-    Testing: ["Playwright", "Postman", "Vitest"],
-  },
-  {
-    "Data Analysis and Visual": [
-      "Python",
-      "Spyder",
-      "Jupyter",
-      "NumPy",
-      "Pandas",
-      "MatplotLib",
-      "R",
-      "Tableau",
-    ],
-  },
-];
-
-const mappedSkillset = skillset.map((category) => {
-  const key = Object.keys(category)[0]; // Extracting the category key
-  const value = category[key]; // Extracting the array of skills
-  return { category: key, skills: value };
-});
-
 const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
+  const quotes = [
+    {
+      text: "Tempat asyik belajar baca Al-Qur'an untuk semua kalangan dari tingkat dasar hingga tingkat lanjutan.",
+      author: "Program Fasiih",
+    },
+    {
+      text: "Ngobrol seru terkait Islamic Wonderful Marriage dengan berbagai narasumber.",
+      author: "Program SakinahTalk",
+    },
+    {
+      text: "Kumpulan bisnis santri, pengajar dan jajaran Qaf yang sebagian keuntungannya untuk support program Qaf.",
+      author: "Ecosystem Tijarah",
+    },
+  ];
   return (
     <section id="about" className="section" ref={ref}>
-      <div className="container mx-auto mt-4">
+      <div className="container mx-auto mt-[120px]">
         <div className="flex flex-col h-screen">
           {/* IMAGE */}
           <VideoBackground />
@@ -79,64 +39,39 @@ const About = () => {
           ></motion.div> */}
           {/* TEXT */}
           <div className="flex-1">
-            {/* BUTTON */}
-            <div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-x-10 gap-y-20 lg:gap-y-0">
-              <motion.h1
-                variants={fadeIn("left", 0.3)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
-                className="cursor-pointer mt-20 flex flex-col justify-start items-start font-bold text-[150px] md:text-[180px] sideicon"
-              >
-                Tech <span className="mt-5 text-purple-900">set.</span>
-              </motion.h1>
-              <motion.div
-                variants={fadeIn("right", 0.5)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-              >
-                {mappedSkillset.map((item, index) => (
-                  <div
-                    key={index}
-                    className="flex flex-col justify-end items-end mb-1"
-                  >
-                    <p className="mr-2">{item.category}</p>
-                    <ul className="max-w-lg flex flex-wrap justify-end items-end">
-                      {item.skills.map((skill, skillIndex) => (
-                        <li className="mr-2 mb-2" key={skillIndex}>
-                          <span className="cursor-pointer px-3 py-1 rounded-md bg-purple-900 text-[16px] hover:bg-black">
-                            {skill}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </motion.div>
-            </div>
-            <div className="mt-5 flex flex-col justify-center items-center text-justify">
-              <h1 className="cursor-pointer font-bold seticon">About me</h1>
-              <p className="max-w-5xl sm:max-w-6xl">
-                Studying in the{" "}
-                <span className="font-bold text-purple-500">
-                  Geophysics and Meteorology department at IPB University
-                </span>{" "}
-                made me interact a lot with the analysis of thousands of data
-                (soil, water, climate and weather) using Programming Language
-                Python, R and ArcGIS. This increases my curiosity towards the
-                world of programming because we can channel{" "}
-                <span className="font-bold text-purple-500">
-                  complexity, creativity and problem solving
-                </span>{" "}
-                in it. And also, this passion made me explore programming
-                languages for website and mobile development. Currently,{" "}
-                <span className="font-bold text-purple-500">
-                  I work on two institutions as a Digital Strategist Manager
-                </span>
-                , which also includes website maintenance and development. I
-                also work on private projects in mobile and website development.
+            <div className="mt-[20px] flex flex-col justify-center items-center text-justify">
+              <h1 className="cursor-pointer font-bold seticon">
+                Lebih dekat dengan Qaf
+              </h1>
+              <p className="max-w-5xl sm:max-w-4xl mt-4">
+                Qaf Institute merupakan komunitas yang menyediakan program
+                berupa <span className="font-bold text-purple-500">pelayanan pendidikan Bina Baca Qur'an (Tahsin) yang
+                diselenggarakan secara online.</span> Komunitas ini terbentuk di awal
+                tahun 2021 saat masa pandemi COVID-19. Saat ini, program-program
+                Qaf didukung oleh lembaga nasional dan internasional. <span className="font-bold text-purple-500">Program
+                tersebut diantaranya program Fasiih Qur'an, SakinahTalk dan
+                Ecosystem.</span>
               </p>
+              <div className="mt-10 max-w-5xl">
+                <h1 className="flex justify-center items-center cursor-pointer seticon font-bold mt-10 text-center">
+                  Deskripsi Program Qaf
+                </h1>
+                <div className="flex justify-center items-start grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {quotes.map((quote, index) => (
+                    <div
+                      key={index}
+                      className="bg-black border border-black rounded-lg mx-[60px] sm:mx-[20px] md:mx-0 p-6 shadow-md hover:border-purple-900 hover:scale-125 transition-transform ease-in cursor-pointer"
+                    >
+                      <p className="text-sm text-white font-medium mb-4 leading-6">
+                        {quote.text}
+                      </p>
+                      <p className="text-purple-600 font-bold text-right">
+                        {quote.author}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
