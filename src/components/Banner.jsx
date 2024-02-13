@@ -21,7 +21,7 @@ const Banner = () => {
       <div className="container mx-auto mt-[160px] sm:mt-[30px] flex flex-col w-full justify-center items-center">
         <div className="mb-[120px]">
           <img
-            className="flex justify-center items-center w-full text-center w-[250px] h-auto"
+            className="flex justify-center items-center text-center w-[300px] h-auto"
             src={Logo}
             alt=""
           />
