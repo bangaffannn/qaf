@@ -14,7 +14,7 @@ export default function Services() {
   return (
     <div
       id="services"
-      className="mt-[300px] sm:mt-10 md:mt-0 section flex flex-row justify-center items-start"
+      className="mt-[400px] sm:mt-10 md:mt-0 section flex flex-row justify-center items-start"
     >
       <div className="mb-20">
         <h1 className="flex justify-center items-center cursor-pointer text-3xl hover:scale-90 transition-transform ease-in font-bold mb-10 text-center">
