@@ -9,13 +9,13 @@ The Foundation Profile Website is designed to showcase the mission, values, proj
 ## Technologies Used
 The website is built using the following technologies:
 
-HTML5: Provides the structure and semantics for the web pages.
-CSS3: Handles the styling and layout of the website.
-React JS: Adds interactivity and dynamic functionality to the website.
-Tailwind: Utilized for responsive design and pre-styled components.
-Font Awesome: Used for icons and visual elements.
-Git: Version control system for managing the source code.
-GitHub Pages: Hosting platform for the live website.
+1. HTML5: Provides the structure and semantics for the web pages.
+2. CSS3: Handles the styling and layout of the website.
+3. React JS: Adds interactivity and dynamic functionality to the website.
+4. Tailwind: Utilized for responsive design and pre-styled components.
+5. Font Awesome: Used for icons and visual elements.
+6. Git: Version control system for managing the source code.
+7. GitHub Pages: Hosting platform for the live website.
 
 ## Contributing
 We welcome contributions from the community to help improve the Foundation Profile Website. If you'd like to contribute, please follow these guidelines:
